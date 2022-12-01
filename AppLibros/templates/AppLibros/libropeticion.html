@@ -1,0 +1,28 @@
+{% extends "AppLibros/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<title> Peticion </title>
+
+{% endblock %}
+
+{% block contenido %}
+
+<h1>Formulario para pedir Libro</h1>
+
+<form action="{% url 'LibroPeticion' %}" method="POST"> {% csrf_token %}
+
+<table>
+    
+    {{ form.as_table }}
+    
+</table>
+    
+<input type="submit" value="ENVIAR PETICION">
+ 
+    
+</form>
+
+{% endblock %}

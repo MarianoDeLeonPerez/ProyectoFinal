@@ -1,0 +1,27 @@
+{% extends "AppLibros/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<title> Inicio </title> 
+
+{% endblock %}
+
+{% block contenido %}
+
+<a class="btn btn-lg btn-dark" href="{% url 'LibroPeticion' %}">Pedir Libro</a>
+
+<a class="btn btn-lg btn-dark" href="{% url 'MangaPeticion' %}">Pedir Manga</a>
+
+<a class="btn btn-lg btn-dark" href="{% url 'ComicPeticion' %}">Pedir Comic</a>
+
+<a class="btn btn-lg btn-dark" href="{% url 'busquedaLibro' %}">Buscar!!</a>
+
+<br>
+<br>
+
+
+<h3> {{ mensaje }} </h3>
+
+{% endblock %}
