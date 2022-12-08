@@ -1,0 +1,33 @@
+{% extends "AppLibros/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<title> Busqueda </title>
+
+{% endblock %}
+
+
+{% block contenido %}
+
+<h1>Resultados de la busqueda</h1>
+
+{% if mangas %}
+<ul>
+    {% for manga in mangas %}
+        <li>Nombre: {{manga.nombre}} - Autor: {{manga.autor}}</li>
+        
+        <br>
+    {% endfor %}
+</ul>
+
+{% else %}
+
+<p> NO HAY MANGAS CON ESE NOMBRE!</p>
+
+{% endif %}
+
+
+
+{% endblock %}

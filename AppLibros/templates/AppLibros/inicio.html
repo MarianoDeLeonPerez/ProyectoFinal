@@ -16,12 +16,16 @@
 
 <a class="btn btn-lg btn-dark" href="{% url 'ComicPeticion' %}">Pedir Comic</a>
 
-<a class="btn btn-lg btn-dark" href="{% url 'busquedaLibro' %}">Buscar!!</a>
-
 <br>
 <br>
 
+<a class="btn btn-lg btn-dark" href="{% url 'busquedaLibro' %}">Buscar Libro</a>
+
+<a class="btn btn-lg btn-dark" href="{% url 'busquedaManga' %}">Buscar Manga</a>
+
+<a class="btn btn-lg btn-dark" href="{% url 'busquedaComic' %}">Buscar Comic</a>
 
 <h3> {{ mensaje }} </h3>
 
 {% endblock %}
+
